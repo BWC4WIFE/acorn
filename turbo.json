@@ -1,0 +1,27 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": ["**/.env.*local"],
+  "globalEnv": [
+    "APPLE_TEAM_ID",
+    "GIPHY_API_KEY",
+    "REDDIT_CLIENT_ID",
+    "REDDIT_CLIENT_SECRET",
+    "REDDIT_REDIRECT_URL",
+    "SENTRY_AUTH_TOKEN",
+    "SENTRY_ORG",
+    "SENTRY_PROJECT"
+  ],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "!.next/cache/**"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "lint:types": {
+      "dependsOn": ["^lint:types"]
+    }
+  }
+}

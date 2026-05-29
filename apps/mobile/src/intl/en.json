@@ -1,0 +1,859 @@
+{
+  "a11y": {
+    "aboutCommunity": "About {community}",
+    "addAccount": "Add account",
+    "addFilter": "Add filter",
+    "changeSorting": "Change sorting",
+    "chooseImage": "Choose image",
+    "clearFilters": "Clear filters",
+    "clearFlair": "Clear flair",
+    "clearNotifications": "Mark all notifications as read",
+    "clearQueries": "Clear queries",
+    "clearQuery": "Clear \"{query}\"",
+    "close": "Close",
+    "collapseComment": "Collapse comment",
+    "collapseFeed": "Collapse feed",
+    "collapseSection": "Collapse section",
+    "commentMenu": "Comment menu",
+    "copied": "Copied",
+    "copy": "Copy",
+    "copyImage": "Copy image",
+    "createComment": "Create comment",
+    "createPost": "Create post",
+    "createReply": "Send message",
+    "download": "Download",
+    "downloadGallery": "Download gallery",
+    "downloadImage": "Download image",
+    "downvote": "Downvote",
+    "drag": "Long press to drag item",
+    "expandComment": "Expand comment",
+    "expandFeed": "Expand feed",
+    "expandSection": "Expand section",
+    "fastForward": "Fast forward",
+    "fullscreen": "Fullscreen",
+    "goBack": "Go back",
+    "imageMenu": "Image options",
+    "loadingVideo": "Loading video",
+    "menu": "Menu",
+    "mute": "Mute",
+    "pause": "Pause",
+    "play": "Play",
+    "postMenu": "Post menu",
+    "removeAccount": "Remove {account}",
+    "removeDownvote": "Remove downvote",
+    "removeFilter": "Remove filter",
+    "removeImage": "Remove image",
+    "removeQuery": "Remove \"{query}\"",
+    "removeUpvote": "Remove upvote",
+    "revealSpoiler": "Reveal spoiler",
+    "rewind": "Rewind",
+    "saveFilters": "Save filters",
+    "searchQuery": "Search for \"{query}\"",
+    "selectFlair": "Select post flair",
+    "share": "Share",
+    "shareImage": "Share image",
+    "skipComment": "Skip comment",
+    "swipeAccount": "Tap to switch, swipe right to remove, long press to reorder",
+    "switchAccount": "Switch account",
+    "switchTheme": "Switch to {theme} theme",
+    "toggle": "Toggle",
+    "toggleBold": "Toggle bold",
+    "toggleHeading": "Toggle heading",
+    "toggleItalic": "Toggle italic",
+    "toggleOrderedList": "Toggle ordered list",
+    "toggleSidebar": "Toggle sidebar",
+    "toggleSpoiler": "Toggle spoiler",
+    "toggleStrikethrough": "Toggle strikethrough",
+    "toggleUnorderedList": "Toggle unordered list",
+    "unmute": "Unmute",
+    "upvote": "Upvote",
+    "viewComment": "View comment",
+    "viewCommunity": "View community",
+    "viewFullThread": "View full thread",
+    "viewImage": "View image",
+    "viewLink": "View link",
+    "viewParentThread": "View parent thread",
+    "viewPost": "View post",
+    "viewThread": "View message thread",
+    "viewUser": "View user",
+    "viewVideo": "View video"
+  },
+  "component": {
+    "auth": {
+      "clientId": {
+        "no": {
+          "add": "Add",
+          "title": "Client id missing"
+        },
+        "sheet": {
+          "clientId": {
+            "placeholder": "AC3gfHbJGqU6g6LsbNs9lE"
+          },
+          "copy": "Copy redirect uri",
+          "instructions": {
+            "1": "Head over to <link>Reddit</link> to create an app and grab the client id. Select <highlight>installed app</highlight> as the type and use the redirect uri below",
+            "2": "Enter the generated client id below"
+          },
+          "remove": "Remove",
+          "save": "Save",
+          "title": "Client id"
+        },
+        "yes": {
+          "edit": "Edit",
+          "title": "Client id added"
+        }
+      }
+    },
+    "comments": {
+      "more": {
+        "label": "{count, plural, =0 {More replies} =1 {1 more reply} other {# more replies}}"
+      }
+    },
+    "common": {
+      "empty": {
+        "message": "Nothing here"
+      },
+      "interval": {
+        "all": "All time",
+        "day": "Today",
+        "hour": "Now",
+        "month": "This month",
+        "title": "Interval",
+        "week": "This week",
+        "year": "This year"
+      },
+      "search": {
+        "filter": "Filter",
+        "search": "Search"
+      },
+      "sheet": {
+        "confirm": {
+          "no": "No",
+          "title": "Are you sure?",
+          "yes": "Yes"
+        }
+      },
+      "sort": {
+        "best": "Best",
+        "comments": "Comment count",
+        "confidence": "Best",
+        "controversial": "Controversial",
+        "hot": "Hot",
+        "new": "New",
+        "old": "Old",
+        "relevance": "Relevance",
+        "rising": "Rising",
+        "title": "Sort",
+        "top": "Top"
+      },
+      "type": {
+        "communities": {
+          "title": "Communities"
+        },
+        "feeds": {
+          "title": "Custom feeds"
+        },
+        "type": {
+          "all": "All",
+          "home": "Home",
+          "popular": "Popular",
+          "title": "Feeds"
+        },
+        "users": {
+          "title": "Users"
+        }
+      }
+    },
+    "communities": {
+      "about": {
+        "age": "Age",
+        "favorite": "Favorite",
+        "join": "Join",
+        "leave": "Leave",
+        "subscribers": "Subscribers",
+        "unfavorite": "Unfavorite"
+      }
+    },
+    "filters": {
+      "card": {
+        "title": "Type",
+        "type": {
+          "community": {
+            "label": "Community",
+            "placeholder": "AskReddit"
+          },
+          "keyword": {
+            "label": "Keyword",
+            "placeholder": "politics"
+          },
+          "title": "Type",
+          "user": {
+            "label": "User",
+            "placeholder": "CoolDude123"
+          }
+        }
+      }
+    },
+    "inbox": {
+      "notification": {
+        "comment_reply": "{user} replied to your comment",
+        "post_reply": "{user} replied to your post",
+        "username_mention": "{user} mentioned you"
+      }
+    },
+    "messages": {
+      "reply": {
+        "placeholder": "Say something nice"
+      }
+    },
+    "posts": {
+      "community": {
+        "by": "by"
+      },
+      "flair": {
+        "nsfw": "NSFW",
+        "spoiler": "Spoiler"
+      },
+      "gallery": {
+        "gif": "GIF",
+        "item": "{current, number} of {count, number}",
+        "items": "{count, number} images",
+        "nsfw": "Sensitive content - tap to view",
+        "spoiler": "Spoiler - tap to view"
+      },
+      "link": {
+        "copy": "Copy",
+        "download": "Download",
+        "open": "Open",
+        "share": "Share"
+      },
+      "list": {
+        "more": "Load more"
+      },
+      "menu": {
+        "collapseComment": "Collapse comment",
+        "collapseThread": "Collapse thread",
+        "copyImage": "Copy image",
+        "copyLink": "Copy link",
+        "copyPermalink": "Copy permalink",
+        "copyScreenshot": "Copy screenshot",
+        "copyText": "Copy text",
+        "copyTitle": "Copy title",
+        "deleteComment": "Delete comment",
+        "deletePost": "Delete post",
+        "downloadGallery": "Download gallery",
+        "downloadImage": "Download image",
+        "downloadScreenshot": "Download screenshot",
+        "downloadVideo": "Download video",
+        "downvote": "Downvote",
+        "editComment": "Edit comment",
+        "hideComment": "Hide comment",
+        "hideCommunity": "Hide r/{community}",
+        "hidePost": "Hide post",
+        "hideUser": "Hide u/{user}",
+        "openApp": "Open in app",
+        "openBrowser": "Open in browser",
+        "openCommunity": "Go to r/{community}",
+        "openLink": "Open link",
+        "openUser": "Go to u/{user}",
+        "removeDownvote": "Remove downvote",
+        "removeUpvote": "Remove upvote",
+        "reply": "Reply",
+        "report": {
+          "CONTRIBUTOR_PROGRAM": "Contributor Program violation",
+          "COPYRIGHT": "Copyright violation",
+          "HARASSMENT": "Harassment",
+          "HATE_CONTENT": "Hate",
+          "IMPERSONATION": "Impersonation",
+          "INVOLUNTARY_PORN": "Non-consensual intimate media",
+          "MINOR_ABUSE_OR_SEXUALIZATION": "Minor abuse or sexualization",
+          "PII": "Sharing personal information",
+          "PROHIBITED_SALES": "Prohibited transaction",
+          "SELF_HARM": "Self-harm or suicide",
+          "SPAM": "Spam",
+          "TRADEMARK": "Trademark violation",
+          "VIOLENCE": "Threatening violence",
+          "community": "Breaks r/{community} rules",
+          "title": "Report"
+        },
+        "save": "Save",
+        "section": {
+          "actions": "Actions",
+          "comment": "Comment",
+          "gallery": "Gallery",
+          "image": "Image",
+          "link": "Link",
+          "navigation": "Navigation",
+          "post": "Post",
+          "screenshot": "Screenshot",
+          "video": "Video"
+        },
+        "shareImage": "Share image",
+        "shareLink": "Share link",
+        "sharePermalink": "Share permalink",
+        "shareScreenshot": "Share screenshot",
+        "title": "Post",
+        "toast": {
+          "linkCopied": "Link copied",
+          "screenshotCopied": "Screenshot copied",
+          "textCopied": "Text copied",
+          "titleCopied": "Title copied"
+        },
+        "translateText": "Translate text",
+        "unhidePost": "Unhide post",
+        "unsave": "Unsave",
+        "upvote": "Upvote"
+      },
+      "video": {
+        "nsfw": "Sensitive content - tap to watch",
+        "spoiler": "Spoiler - tap to view"
+      }
+    },
+    "search": {
+      "history": {
+        "clear": "Clear",
+        "title": "Recent"
+      },
+      "list": {
+        "empty": {
+          "community": "Search for communities",
+          "post": "Search for posts",
+          "user": "Search for users"
+        },
+        "notFound": "Nothing here"
+      }
+    },
+    "settings": {
+      "updater": {
+        "apply": "Restart app",
+        "check": "Check for updates",
+        "checking": "Checking for updates",
+        "download": "Download update",
+        "downloading": "Downloading update",
+        "nothing": "No update available"
+      }
+    },
+    "submission": {
+      "account": {
+        "error": "You're not logged in"
+      },
+      "flair": {
+        "label": "Select flair",
+        "required": "Required",
+        "title": "Flair"
+      },
+      "image": {
+        "error": {
+          "url": "Image needs to be uploaded to Reddit"
+        },
+        "max": "Max {max, number}",
+        "min": "Min {min, number}",
+        "placeholder": {
+          "image": "Select image",
+          "video": "Select video"
+        }
+      },
+      "link": {
+        "error": {
+          "blacklist": "Not allowed: {list}",
+          "url": "Required",
+          "whitelist": "Required: {list}"
+        },
+        "placeholder": "Link"
+      },
+      "meta": {
+        "nsfw": "NSFW",
+        "spoiler": "Spoiler"
+      },
+      "text": {
+        "error": {
+          "blacklist": "Not allowed: {list}",
+          "max": "Max {max, plural, =0 {0 characters} =1 {1 character} other {# characters}}",
+          "min": "Min {min, plural, =0 {0 characters} =1 {1 character} other {# characters}}",
+          "required": "Required words: {list}"
+        },
+        "placeholder": "Body"
+      },
+      "title": {
+        "error": {
+          "blacklist": "Not allowed: {list}",
+          "max": "Max {max, plural, =0 {0 characters} =1 {1 character} other {# characters}}",
+          "min": "Min {min, plural, =0 {0 characters} =1 {1 character} other {# characters}}",
+          "required": "Required words: {list}"
+        },
+        "placeholder": "Title"
+      },
+      "toast": {
+        "created": "Post created",
+        "error": "Error creating post",
+        "noId": "Post created but we couldn't find it. You might have to refresh the list"
+      },
+      "type": {
+        "image": "Image",
+        "link": "Link",
+        "text": "Text",
+        "title": "Post type",
+        "video": "Video"
+      }
+    },
+    "users": {
+      "about": {
+        "follow": "Follow",
+        "unfollow": "Unfollow"
+      },
+      "profile": {
+        "age": "Age",
+        "comment": "Comment",
+        "karma": "Karma",
+        "post": "Post"
+      },
+      "search": {
+        "placeholder": "Filter"
+      },
+      "switcher": {
+        "description": "Swipe right to delete an account",
+        "title": "Switch account"
+      }
+    }
+  },
+  "hook": {
+    "auth": {
+      "signIn": {
+        "error": "Something went wrong"
+      }
+    },
+    "purchases": {
+      "subscribe": {
+        "error": "Something went wrong"
+      }
+    }
+  },
+  "screen": {
+    "auth": {
+      "signIn": {
+        "cancel": "Cancel",
+        "description": "Reddit for mobile",
+        "signIn": "Sign in with Reddit",
+        "title": "Acorn"
+      },
+      "subscribe": {
+        "feature": {
+          "1": "Unlimited accounts & usage",
+          "2": "Beautifully designed",
+          "3": "No ads, ever",
+          "4": "Privacy focused",
+          "5": "Actively developed",
+          "6": "Open source"
+        },
+        "footer": {
+          "restore": "Restore purchases",
+          "subscribe": "Subscribe",
+          "trial": "Start free trial"
+        },
+        "header": {
+          "description": "Hello. You need to subscribe to use Acorn to use Reddit."
+        },
+        "price": {
+          "description": "per month"
+        },
+        "trial": {
+          "day": "{count, plural, =0 {None} =1 {# day} other {# days}} free trial",
+          "month": "{count, plural, =0 {None} =1 {# month} other {# months}} free trial",
+          "week": "{count, plural, =0 {None} =1 {# week} other {# weeks}} free trial",
+          "year": "{count, plural, =0 {None} =1 {# year} other {# years}} free trial"
+        }
+      }
+    },
+    "communities": {
+      "tabs": {
+        "communities": "Communities",
+        "users": "Users"
+      },
+      "title": "Communities"
+    },
+    "community": {
+      "search": {
+        "placeholder": "Search"
+      },
+      "tabs": {
+        "about": "About",
+        "posts": "Posts"
+      }
+    },
+    "home": {
+      "title": "Home"
+    },
+    "notifications": {
+      "tabs": {
+        "messages": "Messages",
+        "notifications": "Notifications"
+      },
+      "title": "Notifications"
+    },
+    "posts": {
+      "new": {
+        "title": "New post"
+      },
+      "post": {
+        "title": "Loading"
+      },
+      "reply": {
+        "editing": "Editing comment",
+        "placeholder": "Say something nice",
+        "title": "Reply",
+        "user": "Replying to {user}"
+      }
+    },
+    "profile": {
+      "comments": "Comments",
+      "downvoted": "Downvoted",
+      "hidden": "Hidden",
+      "saved": "Saved",
+      "submitted": "Posts",
+      "title": "Profile",
+      "upvoted": "Upvoted"
+    },
+    "search": {
+      "tabs": {
+        "community": "Communities",
+        "post": "Posts",
+        "user": "Users"
+      },
+      "title": "Search"
+    },
+    "settings": {
+      "about": {
+        "header": {
+          "description": "Reddit for mobile",
+          "title": "Acorn"
+        },
+        "links": {
+          "coffee": "Buy Me a Coffee",
+          "discord": "Discord",
+          "github": "GitHub",
+          "web": "Website"
+        },
+        "title": "About"
+      },
+      "appearance": {
+        "compact": {
+          "feedCompact": "Compact mode",
+          "largeThumbnails": "Large thumbnails",
+          "mediaOnRight": "Show media on right",
+          "title": "Compact"
+        },
+        "fonts": {
+          "apercu": "Apercu",
+          "basis": "Basis",
+          "fold": "Fold",
+          "fontSizeCommentBody": "Comment text size",
+          "fontSizePostBody": "Post text size",
+          "fontSizeTitle": "Title text size",
+          "system": "San Francisco",
+          "systemScaling": "Use system scaling",
+          "title": "Font"
+        },
+        "preferences": {
+          "colorfulComments": "Colorful comments",
+          "themeOled": "OLED mode",
+          "themeTint": "Background tint",
+          "title": "Preferences"
+        },
+        "themes": {
+          "acorn": "Acorn",
+          "auto": "Auto",
+          "dark": "Dark",
+          "indigo": "Indigo",
+          "jade": "Jade",
+          "light": "Light",
+          "plum": "Plum",
+          "ruby": "Ruby",
+          "title": "Theme"
+        },
+        "title": "Appearance"
+      },
+      "cache": {
+        "data": {
+          "query": {
+            "description": "Will refetch all data",
+            "label": "Clear data"
+          },
+          "title": "Data"
+        },
+        "history": {
+          "collapsed": "Clear collapsed comments",
+          "history": {
+            "description": "Refresh posts to restore them or remove dimming",
+            "label": "Clear seen history"
+          },
+          "sorting": "Clear community sorting",
+          "title": "History"
+        },
+        "media": {
+          "image": "Clear image cache",
+          "title": "Media"
+        },
+        "title": "Cache"
+      },
+      "defaults": {
+        "defaults": {
+          "title": "Defaults"
+        },
+        "drawerSections": {
+          "communities": "Communities",
+          "feed": "Feeds",
+          "feeds": "Custom feeds",
+          "title": "Drawer sections",
+          "users": "Users"
+        },
+        "feed": {
+          "title": "Choose default feed"
+        },
+        "feedType": {
+          "all": "All",
+          "community": "Choose community",
+          "feed": "Choose feed",
+          "home": "Home",
+          "popular": "Popular",
+          "title": "Default feed"
+        },
+        "searchTabs": {
+          "community": "Communities",
+          "hint": "You can only disable one tab. Requires app restart",
+          "post": "Posts",
+          "title": "Search tabs",
+          "user": "Users"
+        }
+      },
+      "filters": {
+        "rules": {
+          "info": {
+            "1": "Community and user names are case sensitive"
+          },
+          "no": {
+            "1": "Community and user feeds",
+            "2": "Your own posts and comments",
+            "3": "User and post comments"
+          },
+          "yes": {
+            "1": "Posts in /home, /popular, /all feeds",
+            "2": "Posts, communities, and users in search"
+          }
+        },
+        "save": "Save",
+        "title": "Filters"
+      },
+      "gestures": {
+        "menu": {
+          "comments": "Comments",
+          "left": "Left",
+          "long": "Long swipe",
+          "posts": "Posts",
+          "right": "Right",
+          "short": "Short swipe"
+        },
+        "options": {
+          "collapse": "Collapse",
+          "collapseThread": "Collapse thread",
+          "downvote": "Downvote",
+          "hide": "Hide",
+          "reply": "Reply",
+          "save": "Save",
+          "share": "Share",
+          "upvote": "Upvote"
+        },
+        "title": "Gestures"
+      },
+      "preferences": {
+        "browsing": {
+          "infiniteScrolling": "Infinite scrolling",
+          "oldReddit": "Use old Reddit links",
+          "privateScreenshots": "Hide interactions for screenshots",
+          "refreshInterval": {
+            "description": "Requires app restart",
+            "instant": "Instant",
+            "label": "Auto refresh interval",
+            "never": "Never"
+          },
+          "stickyDrawer": "Sticky drawer",
+          "tabBarMinimizeBehavior": {
+            "automatic": "Automatic",
+            "label": "Tab bar minimize behavior",
+            "never": "Never",
+            "onScrollDown": "On scroll down",
+            "onScrollUp": "On scroll up"
+          },
+          "title": "Browsing"
+        },
+        "comments": {
+          "collapseAutoModerator": "Collapse AutoModerator",
+          "collapsibleComments": "Collapsible comments",
+          "replyPost": "Post reply floating button",
+          "skipComment": "Skip comment floating button",
+          "title": "Comments",
+          "userOnTop": "Show user on top"
+        },
+        "experimental": {
+          "title": "Experimental (require app restart)"
+        },
+        "feedback": {
+          "feedbackHaptics": "Haptics",
+          "feedbackSounds": "Sounds",
+          "hapticsLoud": "Loud haptics",
+          "title": "Feedback"
+        },
+        "history": {
+          "dimSeen": "Dim seen posts",
+          "hideSeen": {
+            "description": "Posts will disappear after you refresh",
+            "label": "Hide seen posts"
+          },
+          "seenOnMedia": "Mark as seen when opening media",
+          "seenOnScroll": {
+            "description": "Requires app restart",
+            "label": "Mark as seen while scrolling"
+          },
+          "seenOnScrollDelay": {
+            "description": "Requires app restart",
+            "label": "Seen on scroll delay"
+          },
+          "seenOnVote": "Mark as seen when voting",
+          "title": "History"
+        },
+        "media": {
+          "autoPlay": "Auto play videos",
+          "blurNsfw": "Blur NSFW",
+          "blurSpoiler": "Blur spoiler",
+          "feedMuted": "Mute feed",
+          "pictureInPicture": "Allow picture in picture",
+          "saveToAlbum": "Save to Acorn album",
+          "title": "Media",
+          "unmuteFullscreen": "Unmute on full screen"
+        },
+        "posts": {
+          "boldTitle": "Bold titles",
+          "communityOnTop": "Show community on top",
+          "hidePostActions": "Hide post actions",
+          "showFlair": "Show flair",
+          "title": "Posts",
+          "upvoteOnSave": "Upvote on save"
+        },
+        "side": {
+          "center": "Center",
+          "hide": "Hide",
+          "left": "Left",
+          "right": "Right"
+        },
+        "system": {
+          "linkBrowser": "Open links in browser",
+          "title": "System"
+        },
+        "title": "Preferences"
+      },
+      "settings": {
+        "about": "About",
+        "appearance": "Appearance",
+        "cache": "Cache",
+        "defaults": "Defaults",
+        "filters": "Filters",
+        "gestures": "Gestures",
+        "preferences": "Preferences",
+        "sort": "Sort",
+        "title": "Settings"
+      },
+      "sort": {
+        "community": {
+          "interval": "Posts interval",
+          "sort": "Posts sort",
+          "title": "Community"
+        },
+        "feed": {
+          "interval": "Posts interval",
+          "sort": "Posts sort",
+          "title": "Feed"
+        },
+        "post": {
+          "sort": "Comments sort",
+          "title": "Post"
+        },
+        "remember": "Remember sorting",
+        "search": {
+          "interval": "Posts interval",
+          "sort": "Posts sort",
+          "title": "Search"
+        },
+        "title": "Sort",
+        "user": {
+          "comments": {
+            "interval": "Comments interval",
+            "sort": "Comments sort"
+          },
+          "posts": {
+            "interval": "Posts interval",
+            "sort": "Posts sort"
+          },
+          "title": "User"
+        }
+      },
+      "title": "Settings"
+    },
+    "users": {
+      "user": {
+        "tabs": {
+          "about": "About",
+          "comments": "Comments",
+          "posts": "Posts"
+        }
+      }
+    }
+  },
+  "toasts": {
+    "comments": {
+      "created": "Comment added",
+      "deleted": "Comment deleted",
+      "error": "Something went wrong",
+      "saved": "Comment saved",
+      "unsaved": "Comment unsaved",
+      "updated": "Comment updated"
+    },
+    "communities": {
+      "favorited": "Favorited {community}",
+      "joined": "Joined {community}",
+      "left": "Left {community}",
+      "unfavorited": "Unfavorited {community}"
+    },
+    "filters": {
+      "updated": "Filters updated"
+    },
+    "image": {
+      "canceled": "Sharing canceled",
+      "copied": "Image copied",
+      "copying": "Copying image",
+      "downloaded": "{count, plural, =0 {Images} =1 {Image} other {# images}} downloaded",
+      "downloading": "Downloading image",
+      "downloadingImages": "Downloading images",
+      "shared": "Image shared",
+      "sharing": "Sharing image"
+    },
+    "link": {
+      "copied": "Link copied",
+      "loading": "Loading"
+    },
+    "notifications": {
+      "markAllAsRead": "All notifications marked as read"
+    },
+    "posts": {
+      "deleted": "Post deleted",
+      "saved": "Post saved",
+      "unsaved": "Post unsaved"
+    },
+    "users": {
+      "followed": "Followed {user}",
+      "unfollowed": "Unfollowed {user}"
+    },
+    "video": {
+      "downloaded": "Video downloaded",
+      "downloading": "Downloading video"
+    }
+  }
+}

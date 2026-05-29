@@ -1,0 +1,72 @@
+import { type ReactNode } from 'react'
+import { type StyleProp, type TextStyle, View } from 'react-native'
+import { StyleSheet } from 'react-native-unistyles'
+
+import { Icon } from '~/components/common/icon'
+import { Spinner } from '~/components/common/spinner'
+import { Text } from '~/components/common/text'
+
+type Props = {
+  arrow?: boolean
+  description?: string
+  label: string
+  labelStyle?: StyleProp<TextStyle>
+  left?: ReactNode
+  loading?: boolean
+  right?: ReactNode
+}
+
+export function MenuItemContent({
+  arrow,
+  description,
+  label,
+  labelStyle,
+  left,
+  loading,
+  right,
+}: Props) {
+  return (
+    <>
+      {loading ? (
+        <Spinner
+          uniProps={(theme) => ({
+            color: theme.colors.accent.contrast,
+            size: theme.space[5],
+          })}
+        />
+      ) : (
+        left
+      )}
+
+      <View style={styles.main}>
+        <Text style={labelStyle} weight="medium">
+          {label}
+        </Text>
+
+        {description ? (
+          <Text color="gray" highContrast={false} size="1">
+            {description}
+          </Text>
+        ) : null}
+      </View>
+
+      {right}
+
+      {arrow ? (
+        <Icon
+          name="chevron.right"
+          uniProps={(theme) => ({
+            size: theme.space[4],
+            tintColor: theme.colors.gray.accent,
+          })}
+        />
+      ) : null}
+    </>
+  )
+}
+
+const styles = StyleSheet.create({
+  main: {
+    flex: 1,
+  },
+})

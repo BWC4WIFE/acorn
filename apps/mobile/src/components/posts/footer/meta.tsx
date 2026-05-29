@@ -1,0 +1,111 @@
+import { type SFSymbol } from 'expo-symbols'
+import { View } from 'react-native'
+import { StyleSheet } from 'react-native-unistyles'
+import { useFormatter } from 'use-intl'
+
+import { Icon } from '~/components/common/icon'
+import { Text } from '~/components/common/text'
+import { TimeAgo } from '~/components/common/time'
+import { getIcon } from '~/lib/icons'
+import { type Post } from '~/types/post'
+
+type Props = {
+  post: Post
+  privacy?: boolean
+}
+
+export function PostMeta({ post, privacy }: Props) {
+  const f = useFormatter()
+
+  const items = [
+    {
+      color: privacy
+        ? undefined
+        : post.liked
+          ? 'orange'
+          : post.liked === false
+            ? 'violet'
+            : undefined,
+      icon: getIcon(
+        privacy
+          ? 'upvote'
+          : post.liked
+            ? 'upvote.fill'
+            : post.liked === false
+              ? 'downvote.fill'
+              : 'upvote',
+      ) satisfies SFSymbol,
+      key: 'votes',
+      label: f.number(post.votes, {
+        notation: 'compact',
+      }),
+      weight: post.liked === null ? undefined : 'fill',
+    },
+    {
+      icon: 'face.smiling.inverse' satisfies SFSymbol,
+      key: 'ratio',
+      label: f.number(post.ratio, {
+        style: 'percent',
+      }),
+    },
+    {
+      icon: 'bubble.left' satisfies SFSymbol,
+      key: 'comments',
+      label: f.number(post.comments, {
+        notation: 'compact',
+      }),
+    },
+    {
+      icon: 'clock' satisfies SFSymbol,
+      key: 'created',
+      label: <TimeAgo date={post.createdAt} />,
+    },
+  ] as const
+
+  return (
+    <View style={styles.main}>
+      {post.sticky ? (
+        <Icon
+          name="pin.fill"
+          uniProps={(theme) => ({
+            size: theme.typography[1].fontSize,
+            tintColor: theme.colors.green.accent,
+          })}
+        />
+      ) : null}
+
+      {items.map((item) => (
+        <View key={item.key} style={styles.item}>
+          <Icon
+            name={item.icon}
+            uniProps={(theme) => ({
+              size: theme.typography[1].fontSize,
+              tintColor:
+                'color' in item && item.color
+                  ? theme.colors[item.color].accent
+                  : theme.colors.gray.text,
+            })}
+          />
+
+          <Text size="1" tabular>
+            {item.label}
+          </Text>
+        </View>
+      ))}
+    </View>
+  )
+}
+
+const styles = StyleSheet.create((theme) => ({
+  item: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    gap: theme.space[1],
+  },
+  main: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    gap: theme.space[2],
+    marginTop: 'auto',
+  },
+}))

@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "jsx": "preserve",
+    "moduleResolution": "bundler",
+    "noUncheckedIndexedAccess": true,
+    "paths": {
+      "@/gallery": ["./modules/gallery"],
+      "~/*": ["./src/*"]
+    },
+    "strict": true,
+    "strictNullChecks": true
+  },
+  "extends": "expo/tsconfig.base",
+  "include": [
+    "src",
+    "modules",
+    "typings",
+    "app.config.ts",
+    "drizzle.config.ts",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+  ]
+}

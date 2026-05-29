@@ -1,0 +1,115 @@
+import { Image } from 'expo-image'
+import { isEmpty, trim } from 'lodash'
+import { type StyleProp, View, type ViewStyle } from 'react-native'
+import { StyleSheet } from 'react-native-unistyles'
+import { useTranslations } from 'use-intl'
+
+import { usePreferences } from '~/stores/preferences'
+import { type Flair } from '~/types/flair'
+
+import { Text } from '../common/text'
+
+export type FlairType = 'text' | 'emoji' | 'both'
+
+type Props = {
+  flair: Array<Flair>
+  nsfw?: boolean
+  spoiler?: boolean
+  style?: StyleProp<ViewStyle>
+  type?: FlairType
+}
+
+export function FlairCard({
+  flair,
+  nsfw,
+  spoiler,
+  style,
+  type = 'both',
+}: Props) {
+  const t = useTranslations('component.posts.flair')
+
+  const { showFlair } = usePreferences(['showFlair'])
+
+  const items = flair.filter((item) =>
+    type === 'both' ? true : item.type === type,
+  )
+
+  if ((!showFlair || items.length === 0) && !nsfw && !spoiler) {
+    return null
+  }
+
+  return (
+    <View pointerEvents="none" style={[styles.main, style]}>
+      {nsfw ? (
+        <View style={[styles.text, styles.nsfw]}>
+          <Text contrast size="1" weight="bold">
+            {t('nsfw')}
+          </Text>
+        </View>
+      ) : null}
+
+      {spoiler ? (
+        <View style={[styles.text, styles.spoiler]}>
+          <Text contrast size="1" weight="bold">
+            {t('spoiler')}
+          </Text>
+        </View>
+      ) : null}
+
+      {showFlair
+        ? items.map((item) => {
+            if (item.type === 'emoji') {
+              return (
+                <Image
+                  accessibilityIgnoresInvertColors
+                  key={item.id}
+                  source={item.value}
+                  style={styles.emoji}
+                />
+              )
+            }
+
+            if (
+              item.value === '​' || // ​zero width space; some community flairs are crazy
+              isEmpty(trim(item.value))
+            ) {
+              return null
+            }
+
+            return (
+              <View key={item.id} style={styles.text}>
+                <Text numberOfLines={1} size="1">
+                  {item.value}
+                </Text>
+              </View>
+            )
+          })
+        : null}
+    </View>
+  )
+}
+
+const styles = StyleSheet.create((theme) => ({
+  emoji: {
+    height: theme.typography[1].lineHeight + theme.space[1],
+    width: theme.typography[1].lineHeight + theme.space[1],
+  },
+  main: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    gap: theme.space[2],
+  },
+  nsfw: {
+    backgroundColor: theme.colors.red.accent,
+  },
+  spoiler: {
+    backgroundColor: theme.colors.green.accent,
+  },
+  text: {
+    backgroundColor: theme.colors.accent.ui,
+    borderCurve: 'continuous',
+    borderRadius: theme.radius[6],
+    paddingHorizontal: theme.space[1] * 1.25,
+    paddingVertical: theme.space[1] / 2,
+  },
+}))
